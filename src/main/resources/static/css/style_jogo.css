@@ -1,0 +1,43 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista li {
+    padding-left: 10px;
+    list-style: none;
+}
+.ganhadores {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.ganhadores {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    border-color: blue;
+}
+
+.ganhadores li {
+    padding-right: 10px;
+    list-style: none;
+}
+.erro{
+    color: red;
+}
+.mensagem{
+    color: blue;
+}
+.formjogo{
+    background-color: rgba(233, 150, 122, 0.20);
+}

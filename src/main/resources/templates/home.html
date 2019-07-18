@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jefferson Games</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style_jogo.css}">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="menu">
+            <nav>
+                <ul class="lista">
+                    <li> <a class="menu" href="/jogar">Jogar</a> </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="jogarores">
+            <h1>Lista de Ganhadores</h1>
+
+
+            <ul class="ganhadores" th:each="ganhador : ${ganhadores}">
+                <li th:text="'Nome: '+${ganhador.nome}"></li>
+                <li>| </li>
+                <li th:text="'Numero jogado: '+${ganhador.numeroJogado}"></li>
+                <li>| </li>
+                <li th:text="'Numero Sortiado: '+${ganhador.numeroSortiado.numero}"></li><br>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>
